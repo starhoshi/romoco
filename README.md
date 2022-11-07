@@ -7,10 +7,10 @@ https://starhoshi.github.io/romoco
 
 ![romoco](https://user-images.githubusercontent.com/3666836/200202102-9401e10c-6a51-494c-bde8-898cb5a7eacd.gif)
 
-## Non-leaked promo codes
+## Promo codes should not be leaked
 
-romoco is hosted on GitHub Pages, because promo codes should not be leaked.
-GitHub Pages has a weak analysis function, so I cannot recognize the promo codes.
+Since romoco is hosted on GitHub Pages, we cannot get your promo codes.  
+The analysis functionality of GitHub Pages is simple and does not allow us to know query parameters.
 
 If you are unsure, please self-host your code in the [gh-pages branch](https://github.com/starhoshi/romoco/tree/gh-pages).
 
