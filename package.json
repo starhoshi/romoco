@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"next dev\" \"npm run css:typegen -- -w\"",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "css:typegen": "tcm -p './{pages,components}/**/*.css'",
+    "fmt": "prettier --write --ignore-unknown {pages,components}/**/*.{ts,tsx,css}"
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "gray-matter": "^4.0.3",
+    "next": "^13.0.0",
+    "next-export-i18n": "^2.1.0",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-github-corner": "^2.5.0",
+    "react-share": "^4.4.1",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.4",
+    "@types/react": "^18.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.5.0",
+    "eslint": "8.26.0",
+    "eslint-config-next": "^13.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "postcss": "^8.4.18",
+    "postcss-loader": "^7.0.1",
+    "postcss-nested": "^6.0.0",
+    "typed-css-modules": "^0.7.2",
+    "typescript": "^4.8.4"
+  }
+}

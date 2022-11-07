@@ -1,0 +1,18 @@
+{
+  "index": {
+    "paste": "プロモコードを貼り付けてください",
+    "hint": "PROMOCODE",
+    "multiLine": "* 改行で複数貼り付け可能です",
+    "md": "Markdown 形式",
+    "copy": "Copy",
+    "copied": "✔️ Copied",
+    "about": "romoco とは",
+    "message1": "romoco は App Store Connect のプロモコードをカメラで読み取れるようにできる Web アプリです。",
+    "message2": "まず、App Store Connect で発行したプロモコードをコピーし rocomo の入力欄に貼り付けてください。",
+    "message3": "右側に表示されたURLをクリックしてみてください。 App Store アプリのカメラでギフトカードを読み取る機能でコードを認識できます。",
+    "message4": "Markdown 形式でコピーできます。GitHub Issue に貼り付けるなどご利用ください。"
+  },
+  "code": {
+    "message1": "App Store アプリのカメラでコードを読み取ってください。"
+  }
+}

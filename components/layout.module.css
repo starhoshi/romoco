@@ -1,0 +1,93 @@
+.container {
+  max-width: 44rem;
+  padding: 0 1rem;
+  margin: 0 auto 6rem;
+}
+
+.span {
+  margin-left: 4px;
+}
+
+.img {
+  width: 1em;
+  height: 1em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 3em;
+  align-items: center;
+  display: flex;
+}
+
+.footer {
+  margin: 4em 0 1em 0;
+  text-align: center;
+}
+
+.share {
+  margin: 0 0.15em;
+}
+
+.developerContainer {
+  margin-top: 1.5em;
+}
+
+.developedBy {
+  color: #888;
+  font-size: 0.7em;
+}
+
+.langSwitcher {
+  display: flex;
+  align-items: center;
+  place-content: flex-start;
+  color: #e0e0e0;
+}
+
+@media screen and (max-width: 52rem) {
+  .langSwitcher {
+    margin-right: 80px;
+  }
+}
+
+.langSwitcher [data-language-switcher] {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  padding: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+
+.langSwitcher [data-is-current='true'] {
+  cursor: default;
+}
+.langSwitcher [data-is-current='true'],
+.langSwitcher [data-language-switcher]:hover,
+.langSwitcher [data-language-switcher]:focus,
+.langSwitcher [data-language-switcher]:active {
+  color: #000;
+}
+.langSwitcher [data-language-switcher]::after {
+  content: '';
+  bottom: 7px;
+  left: 7px;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  transition: all 0.25s ease-in;
+}
+.langSwitcher [data-is-current='true']::after,
+.langSwitcher [data-language-switcher]:hover::after {
+  width: calc(100% - 15px);
+}

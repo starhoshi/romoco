@@ -1,0 +1,86 @@
+.flex {
+    display: flex;
+}
+
+.inputSeparateDiv {
+    margin-top: 2.4em;
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    line-height: 1.5;
+}
+
+.textarea {
+    resize: none;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.markdown {
+    margin-top: 1em;
+    width: 100%;
+}
+
+.copyArea {
+    margin-top: 0.3em;
+    padding: 0.5em;
+    overflow-x: scroll;
+    background-color: #eee;
+    white-space: nowrap;
+    border-radius: 0.5em;
+    border: 0.12em solid #ddd;
+}
+
+.copyButton {
+    margin-left: 0.5em;
+    height: 2.3em;
+}
+
+.subText {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.descriptionContainer {
+    display: flex;
+}
+
+.descriptionSeparetor {
+    width: 50%; 
+}
+
+.p {
+    margin: 0 0 10px;
+}
+
+.screenshotContainer {
+    width: 50%; 
+    margin-left: 0.8em;
+    position: relative;
+}
+
+@media screen and (max-width: 500px) {
+    .descriptionContainer {
+        display: block;
+        width: 100%;
+    }
+
+    .descriptionSeparetor {
+        width: 100%;
+    }
+
+    .screenshotContainer {
+        margin: auto;
+        width: 70%;
+    }
+}
+
+.screenshot {
+    position: relative !important;
+    border: #eee solid 0.1em;
+    height: auto !important;
+}
+
+.separator {
+    height: 1.4em;
+}
