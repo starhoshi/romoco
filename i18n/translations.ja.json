@@ -10,7 +10,8 @@
     "message1": "romoco は App Store Connect のプロモコードをカメラで読み取れるようにできる Web アプリです。",
     "message2": "まず、App Store Connect で発行したプロモコードをコピーし rocomo の入力欄に貼り付けてください。",
     "message3": "右側に表示されたURLをクリックしてみてください。 App Store アプリのカメラでギフトカードを読み取る機能でコードを認識できます。",
-    "message4": "Markdown 形式でコピーできます。GitHub Issue に貼り付けるなどご利用ください。"
+    "message4": "Markdown 形式でコピーできます。GitHub Issue に貼り付けるなどご利用ください。",
+    "message5": "本サービスの利用により生じたいかなる損害についても開発者は責任を負いません。ご了承ください。"
   },
   "code": {
     "message1": "App Store アプリのカメラでコードを読み取ってください。"

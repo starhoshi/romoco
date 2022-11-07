@@ -1,49 +1,49 @@
-import Layout from "../components/layout";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { ChangeEvent, useEffect, useRef, useState } from "react";
-import styles from "./index.module.css";
-import { Meta } from "components/meta";
-import Image from "next/image";
-import { assetsUrl } from "lib/assets_url";
-import { useTranslation, useLanguageQuery } from "next-export-i18n";
+import Layout from '../components/layout'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { ChangeEvent, useEffect, useRef, useState } from 'react'
+import styles from './index.module.css'
+import { Meta } from 'components/meta'
+import Image from 'next/image'
+import { assetsUrl } from 'lib/assets_url'
+import { useTranslation, useLanguageQuery } from 'next-export-i18n'
 
-const strageKey = "indexInputSessionStorageKey";
+const strageKey = 'indexInputSessionStorageKey'
 
 export default function Home() {
-  const [inputValue, setInputValue] = useState<string>("");
-  const [promocodes, setPromocodes] = useState<string[]>([]);
-  const [baseUrl, setBaseUrl] = useState<string>("");
-  const [copied, setCopied] = useState(false);
-  const state = useRouter();
-  const divRef = useRef<HTMLDivElement>(null);
-  const { t } = useTranslation();
-  const [query] = useLanguageQuery();
+  const [inputValue, setInputValue] = useState<string>('')
+  const [promocodes, setPromocodes] = useState<string[]>([])
+  const [baseUrl, setBaseUrl] = useState<string>('')
+  const [copied, setCopied] = useState(false)
+  const state = useRouter()
+  const divRef = useRef<HTMLDivElement>(null)
+  const { t } = useTranslation()
+  const [query] = useLanguageQuery()
 
   useEffect(() => {
-    setInputValue(sessionStorage.getItem(strageKey) ?? "");
-  }, []);
+    setInputValue(sessionStorage.getItem(strageKey) ?? '')
+  }, [])
 
   useEffect(() => {
-    sessionStorage.setItem(strageKey, inputValue);
-    setPromocodes(inputValue.split("\n").filter((v) => v));
-  }, [inputValue]);
+    sessionStorage.setItem(strageKey, inputValue)
+    setPromocodes(inputValue.split('\n').filter((v) => v))
+  }, [inputValue])
 
   const handleChange = (e: ChangeEvent<HTMLTextAreaElement> | undefined) => {
-    const value = e?.target.value ?? "";
-    setInputValue(value);
-  };
+    const value = e?.target.value ?? ''
+    setInputValue(value)
+  }
 
   const copyClick = () => {
     if (divRef.current?.innerText) {
-      navigator.clipboard.writeText(divRef.current.innerText);
-      setCopied(true);
+      navigator.clipboard.writeText(divRef.current.innerText)
+      setCopied(true)
     }
-  };
+  }
 
   useEffect(() => {
-    setBaseUrl(window.location.origin + "/");
-  }, [state.pathname]);
+    setBaseUrl(window.location.origin + '/')
+  }, [state.pathname])
 
   return (
     <Layout>
@@ -51,18 +51,18 @@ export default function Home() {
       <div className={styles.flex}>
         <div className={styles.inputSeparateDiv}>
           <form>
-            <label htmlFor="input">
-              <b>{t("index.paste")}</b>
+            <label htmlFor='input'>
+              <b>{t('index.paste')}</b>
               <textarea
                 className={styles.textarea}
-                id="input"
+                id='input'
                 rows={Math.max(promocodes.length + 1, 6)}
                 onChange={handleChange}
                 value={inputValue}
-                placeholder={t("index.hint")}
+                placeholder={t('index.hint')}
               ></textarea>
             </label>
-            <span className={styles.subText}>{t("index.multiLine")}</span>
+            <span className={styles.subText}>{t('index.multiLine')}</span>
           </form>
         </div>
         <div className={styles.inputSeparateDiv}>
@@ -72,16 +72,16 @@ export default function Home() {
                 <li key={`${v}link`}>
                   <Link href={`/code${urlParams(query.lang, v)}`}>{v}</Link>
                 </li>
-              );
+              )
             })}
           </ul>
         </div>
       </div>
       {!!promocodes.length && (
         <div className={styles.markdown}>
-          <span>{t("index.md")}</span>
+          <span>{t('index.md')}</span>
           <button className={styles.copyButton} onClick={copyClick}>
-            {copied ? t("index.copied") : t("index.copy")}
+            {copied ? t('index.copied') : t('index.copy')}
           </button>
           <div className={styles.copyArea} ref={divRef}>
             {promocodes.map((v) => {
@@ -89,63 +89,50 @@ export default function Home() {
                 <div key={`${v}md`}>
                   - [ ] [{v}]({baseUrl}code{urlParams(query.lang, v)})
                 </div>
-              );
+              )
             })}
           </div>
         </div>
       )}
       <div className={styles.separator} />
-      <h2>{t("index.about")}</h2>
-      <p>{t("index.message1")}</p>
+      <h2>{t('index.about')}</h2>
+      <p>{t('index.message1')}</p>
       <div className={styles.descriptionContainer}>
         <div className={styles.descriptionSeparetor}>
-          <p className={styles.p}>{t("index.message2")}</p>
+          <p className={styles.p}>{t('index.message2')}</p>
         </div>
         <div className={styles.screenshotContainer}>
-          <Image
-            className={styles.screenshot}
-            src={assetsUrl(`/images/romoco_input.jpg`)}
-            alt="romoco input"
-            fill
-          />
+          <Image className={styles.screenshot} src={assetsUrl(`/images/romoco_input.jpg`)} alt='romoco input' fill />
         </div>
       </div>
       <div className={styles.separator} />
       <div className={styles.descriptionContainer}>
         <div className={styles.descriptionSeparetor}>
-          <p className={styles.p}>{t("index.message3")}</p>
+          <p className={styles.p}>{t('index.message3')}</p>
         </div>
         <div className={styles.screenshotContainer}>
-          <Image
-            className={styles.screenshot}
-            src={assetsUrl(`/images/camera.jpg`)}
-            alt="promo code camera"
-            fill
-          />
+          <Image className={styles.screenshot} src={assetsUrl(`/images/camera.jpg`)} alt='promo code camera' fill />
         </div>
       </div>
       <div className={styles.separator} />
       <div className={styles.descriptionContainer}>
         <div className={styles.descriptionSeparetor}>
-          <p className={styles.p}>{t("index.message4")}</p>
+          <p className={styles.p}>{t('index.message4')}</p>
         </div>
         <div className={styles.screenshotContainer}>
-          <Image
-            className={styles.screenshot}
-            src={assetsUrl(`/images/markdown.jpg`)}
-            alt="markdown copy"
-            fill
-          />
+          <Image className={styles.screenshot} src={assetsUrl(`/images/markdown.jpg`)} alt='markdown copy' fill />
         </div>
       </div>
+      <div className={styles.separator} />
+      <p className={styles.p}>{t('index.message5')}</p>
     </Layout>
-  );
+  )
 }
 
 const urlParams = (lang: string, string: string): string => {
-  let params = `?string=${string}`;
-  if (lang !== "ja") {
-    params += `&lang=${lang}`;
+  let params = `?string=${string}`
+  if (lang !== 'ja') {
+    params += `&lang=${lang}`
   }
-  return params;
-};
+  return params
+}
