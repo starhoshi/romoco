@@ -12,6 +12,7 @@ declare const styles: {
   readonly "screenshotContainer": string;
   readonly "screenshot": string;
   readonly "separator": string;
+  readonly "hr": string;
 };
 export = styles;
 

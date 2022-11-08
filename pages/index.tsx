@@ -94,7 +94,9 @@ export default function Home() {
           </div>
         </div>
       )}
-      <div className={styles.separator} />
+
+      <hr className={styles.hr} />
+
       <h2>{t('index.about')}</h2>
       <p>{t('index.message1')}</p>
       <div className={styles.descriptionContainer}>
