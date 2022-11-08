@@ -1,14 +1,14 @@
 {
   "index": {
-    "paste": "Paste Promo code",
-    "hint": "PROMOCODE",
+    "paste": "Paste Promotion code",
+    "hint": "PROMOTION_CODE",
     "multiLine": "* Multiple pastes are possible in a new line",
     "md": "Markdown",
     "copy": "Copy",
     "copied": "✔️ Copied",
     "about": "What is romoco?",
-    "message1": "romoco makes App Store Connect's promo codes available for camera.",
-    "message2": "First, copy the promo code you created in App Store Connect and paste it into the rocomo input field. (Sorry, the screenshot is in Japanese.)",
+    "message1": "romoco makes App Store Connect's promotion codes available for camera.",
+    "message2": "First, copy the promotion code you created in App Store Connect and paste it into the rocomo input field. (Sorry, the screenshot is in Japanese.)",
     "message3": "Click on the URL displayed on the right. The code can be recognized by the App Store app's camera-reading gift card feature.",
     "message4": "You can copy it in Markdown format and paste it into a GitHub Issue, etc.",
     "message5": "Finally, the developer is not responsible for any damages that may occur as a result of using this service."

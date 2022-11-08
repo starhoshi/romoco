@@ -3,7 +3,7 @@ import React from 'react'
 import { assetsUrl } from 'lib/assets_url'
 
 export const siteTitle = 'romoco'
-export const description = "Makes App Store Connect's promo codes available on camera."
+export const description = "Makes App Store Connect's promotion codes available on camera."
 export const shareTitle = `${siteTitle} - ${description}`
 export const shareUrl = 'https://starhoshi.github.io/romoco'
 

@@ -111,7 +111,7 @@ export default function Home() {
           <p className={styles.p}>{t('index.message3')}</p>
         </div>
         <div className={styles.screenshotContainer}>
-          <Image className={styles.screenshot} src={assetsUrl(`/images/camera.jpg`)} alt='promo code camera' fill />
+          <Image className={styles.screenshot} src={assetsUrl(`/images/camera.jpg`)} alt='promotion code camera' fill />
         </div>
       </div>
       <div className={styles.separator} />

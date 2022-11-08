@@ -25,7 +25,7 @@ export default function Code() {
       <p className={styles.description}>{t('code.message1')}</p>
       <div className={styles.screenshotContainer}>
         <Image className={styles.screenshot} src={assetsUrl(`/images/appstoreapp.jpg`)} alt='appstore app' fill />
-        <Image className={styles.screenshot} src={assetsUrl(`/images/scan.jpg`)} alt='promo code camera' fill />
+        <Image className={styles.screenshot} src={assetsUrl(`/images/scan.jpg`)} alt='promotion code camera' fill />
       </div>
     </Layout>
   )
