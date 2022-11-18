@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router'
-import { Meta, siteTitle } from '@/_core/components/Meta'
 import { Template } from '@/_core/components/Template/template'
 import { NextPage } from 'next'
 import { Code } from '@/code'
+import { Meta, siteTitle } from '@/_core/components/Meta'
 
 const CodePage: NextPage = () => {
   const router = useRouter()
