@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { Template } from '@/_core/components/Template/template'
+import { Template } from '@/_core/components/Template'
 import { NextPage } from 'next'
 import { Code } from '@/code'
 import { Meta, siteTitle } from '@/_core/components/Meta'

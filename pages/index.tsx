@@ -1,5 +1,5 @@
 import { Meta } from '@/_core/components/Meta'
-import { Template } from '@/_core/components/Template/template'
+import { Template } from '@/_core/components/Template'
 import { Top } from '@/top'
 import { NextPage } from 'next'
 
