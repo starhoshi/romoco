@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
-import { assetsUrl } from 'lib/assets_url'
+import { assetsUrl } from '@/_core/utils/assets_url'
 
 export const siteTitle = 'romoco'
 export const description = "Makes App Store Connect's promotion codes available on camera."

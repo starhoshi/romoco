@@ -1,12 +1,12 @@
-import Layout from '../components/layout'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { ChangeEvent, useEffect, useRef, useState } from 'react'
 import styles from './index.module.css'
-import { Meta } from 'components/meta'
+import { Meta } from '@/_core/components/Meta'
 import Image from 'next/image'
-import { assetsUrl } from 'lib/assets_url'
+import { assetsUrl } from '@/_core/utils/assets_url'
 import { useTranslation, useLanguageQuery } from 'next-export-i18n'
+import Template from '@/_core/components/Template/template'
 
 const strageKey = 'indexInputSessionStorageKey'
 
@@ -46,7 +46,7 @@ export default function Home() {
   }, [state.pathname])
 
   return (
-    <Layout>
+    <Template>
       <Meta />
       <div className={styles.flex}>
         <div className={styles.inputSeparateDiv}>
@@ -127,7 +127,7 @@ export default function Home() {
       </div>
       <div className={styles.separator} />
       <p className={styles.p}>{t('index.message5')}</p>
-    </Layout>
+    </Template>
   )
 }
 

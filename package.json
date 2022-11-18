@@ -5,8 +5,8 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "css:typegen": "tcm -p './{pages,components}/**/*.css'",
-    "fmt": "prettier --write --ignore-unknown {pages,components}/**/*.{ts,tsx,css}",
+    "css:typegen": "tcm -p './{pages,components,src}/**/*.css'",
+    "fmt": "prettier --write --ignore-unknown {pages,components,src}/**/*.{ts,tsx,css}",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
