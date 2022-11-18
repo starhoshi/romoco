@@ -1,18 +1,21 @@
 import { useRouter } from 'next/router'
 import { Meta, siteTitle } from '@/_core/components/Meta'
 import { Template } from '@/_core/components/Template/template'
-import { Top } from '@/top'
 import { NextPage } from 'next'
+import { Code } from '@/code'
 
-const TopPage: NextPage = () => {
+const CodePage: NextPage = () => {
+  const router = useRouter()
+  const query = router.query.string as string | undefined
+
   return (
     <>
-      <Meta />
+      <Meta title={`${siteTitle} - ${query}`} />
       <Template>
-        <Top />
+        <Code />
       </Template>
     </>
   )
 }
 
-export default TopPage
+export default CodePage

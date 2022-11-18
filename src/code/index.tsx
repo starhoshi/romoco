@@ -2,19 +2,16 @@ import { useRouter } from 'next/router'
 import { assetsUrl } from '../../src/_core/utils/assets_url'
 import styles from './index.module.css'
 import Image from 'next/image'
-import { Meta, siteTitle } from '@/_core/components/Meta'
 import { useTranslation } from 'next-export-i18n'
-import { Template } from '@/_core/components/Template/template'
 
-export default function Code() {
+export const Code: React.FC = () => {
   const router = useRouter()
   const query = router.query.string as string | undefined
   const arrayString = query?.split('') ?? []
   const { t } = useTranslation()
 
   return (
-    <Template>
-      <Meta title={`${siteTitle} - ${query}`} />
+    <>
       <div className={styles.codeContainer}>
         <div className={styles.code}>
           {arrayString.map((v, i) => {
@@ -27,6 +24,6 @@ export default function Code() {
         <Image className={styles.screenshot} src={assetsUrl(`/images/appstoreapp.jpg`)} alt='appstore app' fill />
         <Image className={styles.screenshot} src={assetsUrl(`/images/scan.jpg`)} alt='promotion code camera' fill />
       </div>
-    </Template>
+    </>
   )
 }
