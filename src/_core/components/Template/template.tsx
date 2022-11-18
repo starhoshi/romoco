@@ -8,7 +8,7 @@ import { FacebookShareButton, HatenaShareButton, TwitterShareButton, TwitterIcon
 import { LanguageSwitcher } from 'next-export-i18n'
 import { shareTitle, shareUrl, siteTitle } from '../Meta'
 
-export default function Template(this: any, { children }: { children: React.ReactNode }) {
+export const Template: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>

@@ -4,7 +4,7 @@ import styles from './index.module.css'
 import Image from 'next/image'
 import { Meta, siteTitle } from '@/_core/components/Meta'
 import { useTranslation } from 'next-export-i18n'
-import Template from '@/_core/components/Template/template'
+import { Template } from '@/_core/components/Template/template'
 
 export default function Code() {
   const router = useRouter()
