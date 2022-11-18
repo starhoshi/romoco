@@ -1,94 +1,94 @@
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .inputSeparateDiv {
-    margin-top: 2.4rem;
-    display: flex;
-    flex-direction: column;
-    width: 50%; 
-    line-height: 1.5;
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  line-height: 1.5;
 }
 
 .textarea {
-    resize: none;
-    width: 100%;
-    font-size: 1rem;
+  resize: none;
+  width: 100%;
+  font-size: 1rem;
 }
 
 .markdown {
-    margin-top: 1rem;
-    width: 100%;
+  margin-top: 1rem;
+  width: 100%;
 }
 
 .copyArea {
-    margin-top: 0.3rem;
-    padding: 0.5rem;
-    overflow-x: scroll;
-    background-color: #eee;
-    white-space: nowrap;
-    border-radius: 0.5rem;
-    border: 0.12rem solid #ddd;
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  overflow-x: scroll;
+  background-color: #eee;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  border: 0.12rem solid #ddd;
 }
 
 .copyButton {
-    margin-left: 0.5rem;
-    height: 2.3rem;
+  margin-left: 0.5rem;
+  height: 2.3rem;
 }
 
 .subText {
-    color: #888;
-    font-size: 0.9rem;
+  color: #888;
+  font-size: 0.9rem;
 }
 
 .descriptionContainer {
-    display: flex;
+  display: flex;
 }
 
 .descriptionSeparetor {
-    width: 50%; 
+  width: 50%;
 }
 
 .p {
-    margin: 0 0 10px;
+  margin: 0 0 10px;
 }
 
 .screenshotContainer {
-    width: 50%; 
-    margin-left: 0.8rem;
-    position: relative;
+  width: 50%;
+  margin-left: 0.8rem;
+  position: relative;
 }
 
 @media screen and (max-width: 500px) {
-    .descriptionContainer {
-        display: block;
-        width: 100%;
-    }
+  .descriptionContainer {
+    display: block;
+    width: 100%;
+  }
 
-    .descriptionSeparetor {
-        width: 100%;
-    }
+  .descriptionSeparetor {
+    width: 100%;
+  }
 
-    .screenshotContainer {
-        margin: auto;
-        width: 70%;
-    }
+  .screenshotContainer {
+    margin: auto;
+    width: 70%;
+  }
 }
 
 .screenshot {
-    position: relative !important;
-    border: #eee solid 0.1rem;
-    height: auto !important;
+  position: relative !important;
+  border: #eee solid 0.1rem;
+  height: auto !important;
 }
 
 .separator {
-    height: 1.4em;
+  height: 1.4em;
 }
 
 .hr {
-    margin: 8rem 1rem 2rem;
-    border: 0;
-    height: 0;
-    border-top: 2px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  margin: 8rem 1rem 2rem;
+  border: 0;
+  height: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
