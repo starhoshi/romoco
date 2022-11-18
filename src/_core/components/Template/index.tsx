@@ -7,13 +7,14 @@ import styles from './index.module.css'
 import { FacebookShareButton, HatenaShareButton, TwitterShareButton, TwitterIcon, FacebookIcon, HatenaIcon } from 'react-share'
 import { LanguageSwitcher } from 'next-export-i18n'
 import { shareTitle, shareUrl, siteTitle } from '../Meta'
+import { Logo } from '../Logo'
 
 export const Template: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
         <Link className={styles.link} href='/' passHref>
-          <Image src={assetsUrl(`/images/romoco.png`)} alt='romoco logo' width={54} height={54} />
+          <Logo width={54} height={54} />
           <span className={styles.span}>{siteTitle}</span>
         </Link>
         <div className={styles.langSwitcher}>
