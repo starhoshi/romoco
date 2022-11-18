@@ -11,7 +11,7 @@ type Props = {
   title?: string
 }
 
-export const Meta = ({ title = shareTitle }: Props) => {
+export const Meta: React.FC<Props> = ({ title = shareTitle }) => {
   return (
     <Head>
       <title>{title}</title>
