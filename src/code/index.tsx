@@ -3,6 +3,7 @@ import { assetsUrl } from '../../src/_core/utils/assets_url'
 import styles from './index.module.css'
 import Image from 'next/image'
 import { useTranslation } from 'next-export-i18n'
+import React from 'react'
 
 export const Code: React.FC = () => {
   const router = useRouter()

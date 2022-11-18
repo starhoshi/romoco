@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { ChangeEvent, useEffect, useRef, useState } from 'react'
+import React, { ChangeEvent, useEffect, useRef, useState } from 'react'
 import styles from './index.module.css'
 import Image from 'next/image'
 import { assetsUrl } from '@/_core/utils/assets_url'
