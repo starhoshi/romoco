@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { assetsUrl } from '@/_core/utils/assets_url'
 import GithubCorner from 'react-github-corner'
-import Image from 'next/image'
 import styles from './index.module.css'
 import { FacebookShareButton, HatenaShareButton, TwitterShareButton, TwitterIcon, FacebookIcon, HatenaIcon } from 'react-share'
 import { LanguageSwitcher } from 'next-export-i18n'
