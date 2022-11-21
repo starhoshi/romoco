@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { CSSProperties } from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { background, line, textColor } from './colors'
 
@@ -6,10 +6,10 @@ const ColorCards = ({ colors, name }: { name: string; colors: Record<string, str
   return (
     <>
       <h3 style={{ marginBottom: '10px' }}>{name}</h3>
-      <div style={{ display: 'flex', flexDirection: 'row', gap: '20px' }}>
+      <div style={containerStyle}>
         {Object.entries(colors).map(([name, color]) => (
-          <div key={name} style={{ border: 'solid 1px #ebebeb', padding: '8px', borderRadius: '12px' }}>
-            <div style={{ backgroundColor: color, width: '240px', height: '150px', border: 'solid 1px #efefef', borderRadius: '12px' }} />
+          <div key={name} style={cardStyle}>
+            <div style={colorStyle(color)} />
             <p style={{ fontSize: '15px' }}>{name}</p>
             <p style={{ fontSize: '13px', color: '#3c3c3c' }}>{color}</p>
           </div>
@@ -37,6 +37,12 @@ export const Line = Template.bind({})
 Line.args = {
   name: 'Line',
   colors: line,
+}
+
+const containerStyle: CSSProperties = { display: 'flex', flexDirection: 'row', gap: '20px' }
+const cardStyle: CSSProperties = { border: 'solid 1px #ebebeb', padding: '8px', borderRadius: '12px' }
+const colorStyle = (color: string): CSSProperties => {
+  return { backgroundColor: color, width: '240px', height: '150px', border: 'solid 1px #efefef', borderRadius: '12px' }
 }
 
 export default {
