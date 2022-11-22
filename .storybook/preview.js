@@ -1,4 +1,5 @@
 import '../src/_core/styles/global.css'
+import '../src/_core/styles/colors.css'
 import React from 'react'
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import { RouterContext } from 'next/dist/shared/lib/router-context'
