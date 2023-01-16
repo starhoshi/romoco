@@ -13,6 +13,8 @@ export const Code: React.FC = () => {
 
   const hoge = ''
 
+  cons hoge;
+
   return (
     <>
       <div className={styles.codeContainer}>
