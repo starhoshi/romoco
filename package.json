@@ -4,7 +4,7 @@
     "dev": "concurrently \"next dev\" \"npm run css:typegen -- -w\"",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint -f rdjson",
+    "lint": "eslint -f rdjson src",
     "css:typegen": "tcm -p './{pages,src}/**/*.css'",
     "fmt": "prettier --write --ignore-unknown {pages,src}/**/*.{ts,tsx,css}",
     "storybook": "start-storybook -p 6006",
