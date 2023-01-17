@@ -5,7 +5,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "eslint src",
-    "lintorg": "next lint",
+    "lintorg": "next lint -f stylish",
     "css:typegen": "tcm -p './{pages,src}/**/*.css'",
     "fmt": "prettier --write --ignore-unknown {pages,src}/**/*.{ts,tsx,css}",
     "storybook": "start-storybook -p 6006",
