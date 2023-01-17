@@ -50,7 +50,6 @@
     "eslint-config-next": "^13.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
-    "eslint-formatter-rdjson": "^1.0.5",
     "eslint-plugin-storybook": "^0.6.7",
     "postcss": "^8.4.18",
     "postcss-loader": "^7.0.1",

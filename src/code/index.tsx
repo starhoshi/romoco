@@ -11,8 +11,6 @@ export const Code: React.FC = () => {
   const arrayString = query?.split('') ?? []
   const { t } = useTranslation()
 
-  const test = ''
-
   return (
     <>
       <div className={styles.codeContainer}>
