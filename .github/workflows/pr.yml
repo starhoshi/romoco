@@ -20,7 +20,8 @@ jobs:
         env:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm run lint | reviewdog -f=eslint -reporter=github-pr-review -filter-mode=diff_context -fail-on-error=true      # - uses: reviewdog/action-eslint@v1
+          npm run lint | reviewdog -f=eslint -reporter=github-pr-review -filter-mode=diff_context -fail-on-error=true
+      # - uses: reviewdog/action-eslint@v1
       #   with:
       #     reporter: github-pr-review
       #     eslint_flags: 'src/'
